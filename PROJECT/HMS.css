@@ -1,0 +1,132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url(https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    position: absolute;
+    top: 15px;
+    padding: 15px;
+    display: flex;
+    height: 60px;
+    width: 60vw;
+    /* border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px; */
+    border-radius: 45px;
+    backdrop-filter: blur(9px);
+    box-shadow: 1px 25px 45px black;
+    /* border: 5px solid #322125; */
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+.navbar ul a {
+    font-size: large;
+    /* border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px; */
+
+    border-radius: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px 13px;
+    transition: all 300ms ease-in-out 0s;
+    background: rgba(0, 0, 0, 0.252);
+    box-shadow: 1px 7px 10px rgb(0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0.214);
+}
+
+nav a:hover {
+    background: none;
+    box-shadow: none;
+    border: 2px solid rgba(0, 0, 0, 0.214);
+}
+
+nav a.active {
+    background: none;
+    box-shadow: none;
+    border: 2px solid rgba(0, 0, 0, 0.214);
+}
+
+.navbar ul img {
+    position: absolute;
+    left: 29px;
+    top: 9px;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    box-shadow: 1px 5px 30px rgb(0, 0, 0)
+}
+
+.CustLogin {
+    color: white;
+    flex-direction: column;
+    display: flex;
+    width: 500px;
+    border-radius: 45px;
+    position: absolute;
+    top: 165px;
+    padding: 35px;
+    /* border: 2px solid black; */
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.214);
+    box-shadow: 1px 5px 30px rgb(0, 0, 0);
+}
+
+.CustLogin div {
+    display: flex;
+    align-items: center;
+}
+
+.CustLogin input {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 300px;
+    font-size: 20px;
+    outline: none;
+    background: none;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.214);
+    margin: 5px;
+    padding: 10px;
+    transition: all 300ms ease-in-out 0s;
+}
+
+.CustLogin input::placeholder {
+    color: white;
+    opacity: 0.6;
+}
+
+.CustLogin div img {
+    filter: invert(100%);
+    height: 40px;
+    width: 40px;
+}
+
+.CustLogin .Submit {
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 1px 4px 10px rgb(0, 0, 0);
+}
+
+.CustLogin .Submit:hover {
+    box-shadow: none;
+    cursor: pointer;
+}

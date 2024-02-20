@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        section {
+            color: white;
+            background: #1a1a2d;
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 0;
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            height: 350px;
+            width: 350px;
+            background: linear-gradient(yellow, rgb(255, 115, 0), rgb(202, 0, 34));
+            border-radius: 50%;
+            z-index: -1;
+            transform: translate(-295px, -124px);
+        }
+
+        section::after {
+            content: '';
+            position: absolute;
+            height: 450px;
+            width: 450px;
+            background: linear-gradient(#2196f3, violet, rgb(202, 0, 34));
+            border-radius: 50%;
+            z-index: -1;
+            transform: translate(195px, 124px);
+        }
+
+        .box {
+            /* box-shadow: 1px 25px 45px black; */
+            /* backdrop-filter: blur(8px); */
+            /* border-radius: 10px; */
+            transition: all 300ms ease-in-out;
+            height: 625px;
+            width: 700px;
+        }
+
+        .box:hover {
+            box-shadow: 1px 25px 45px black;
+            backdrop-filter: blur(8px);
+            border-radius: 10px;
+            height: 625px;
+            width: 700px;
+        }
+
+        .box h1 {
+            cursor: default;
+            font-size: 30px;
+            padding: 19px;
+            transition: all 300ms ease-in-out;
+            /* text-shadow: 2px 2px 20px white; */
+        }
+        .box:hover h1 {
+            cursor: default;
+            font-size: 30px;
+            padding: 19px;
+            text-shadow: 2px 2px 20px white;
+        }
+
+        .box ul a {
+            /* box-shadow: 1px 25px 45px rgb(0, 0, 0, 0.5); */
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 10px 30px;
+            margin: 15px 105px;
+            border-radius: 16px;
+            /* background: rgba(0, 0, 0, 0.22); */
+            cursor: pointer;
+            /* transition: all 300ms ease-in-out 0s; */
+            text-decoration: none;
+        }
+        .box ul #B1 {
+            transition: all 300ms ease-in-out 0.1s;
+        }
+        .box ul #B2 {
+            transition: all 300ms ease-in-out 0.2s;
+        }
+        .box ul #B3 {
+            transition: all 300ms ease-in-out 0.3s;
+        }
+        .box ul #B4 {
+            transition: all 300ms ease-in-out 0.4s;
+        }
+        .box:hover ul a {
+            box-shadow: 1px 25px 45px rgb(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 10px 30px;
+            margin: 15px 105px;
+            border-radius: 16px;
+            background: rgba(0, 0, 0, 0.22);
+            cursor: pointer;
+            transition: all 300ms ease-in-out 0s;
+            text-decoration: none;
+        }
+
+        .box ul a img {
+            box-shadow: 1px 25px 45px rgb(0, 0, 0, 0.5);
+            height: 80px;
+            width: 80px;
+            border-radius: 8px;
+        }
+
+        .box ul a .image {
+            box-shadow: 1px 25px 45px rgb(0, 0, 0, 0.5);
+            height: 80px;
+            width: 80px;
+            border-radius: 8px;
+            background-image: url('https://d30ny7ijak9wq4.cloudfront.net/s3fs-public/images/story/2020/06/05/harsha.jpg');
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .box ul a:hover {
+            color: black;
+            position: relative;
+            background: rgba(255, 255, 255);
+            transform: scale(1.2) translateX(17px) translateY(-5px);
+            font-weight: bold;
+        }
+
+        .box ul a span {
+            font-size: 20px;
+            margin: 2px 15px;
+        }
+
+        .box ul a .rank {
+            font-size: 25px;
+            font-weight: bold;
+            position: absolute;
+            right: 100px;
+            transition: all 100ms ease-in-out 200ms;
+            opacity: 0;
+        }
+
+        .box ul a:hover .rank {
+            color: #0059ff;
+            position: absolute;
+            right: 20px;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            <h1>POPULAR YOUTUBE CREATOR</h1>
+            <ul>
+                <a id="B1" href="https://www.youtube.com/c/BBKiVines">
+                    <img src="wp4248347.jpg" alt="err">
+                    <span>Bhuvan Bam</span>
+                    <span class="rank">#1</span>
+                </a>
+                <a id="B2" href="https://www.youtube.com/c/ashishchanchlanivines">
+                    <img src="https://i.pinimg.com/originals/f3/79/6c/f3796c06a1d1eca135dec3a98390ad87.jpg" alt="err">
+                    <span>Ashish Chanchlani</span>
+                    <span class="rank">#2</span>
+                </a>
+                <a id="B3" href="https://www.youtube.com/c/TheBrainHumour">
+                    <div class="image"></div>
+                    <span>Harsh Beniwal</span>
+                    <span class="rank">#3</span>
+                </a>
+                <a id="B4" href="https://www.youtube.com/c/AddictedA1">
+                    <img src="https://m.media-amazon.com/images/M/MV5BM2NlNzUyODUtZDgyNS00ZjU3LWI5NGUtOWFkYmQwMGVlNGRmXkEyXkFqcGdeQXVyMTE2MTc3MzU1._V1_.jpg"
+                        alt="err">
+                    <span>Carryminati</span>
+                    <span class="rank">#4</span>
+                </a>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

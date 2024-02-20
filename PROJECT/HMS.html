@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="HMS.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <img src="Hotel.png" alt="err">
+            <a class="home active list" href="#">HOME</a>
+            <a class="list" href="#">HOTEL</a>
+            <a class="list" href="#">ROOM</a>
+            <a class="list" href="#">SERVICES</a>
+        </ul>
+    </nav>
+
+    <form class="CustLogin" id="Cust">
+        <h1>Customer Login</h1>
+        <div >
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/user--v1.png" />
+            <input id="Name" type="text" placeholder="Name" value="">
+        </div>
+        <div >
+            <img src="https://img.icons8.com/metro/30/000000/new-post.png" />
+            <input id="email" type="email" placeholder="Email Id">
+        </div>
+        <div >
+            <img src="https://img.icons8.com/ios-glyphs/512/password.png" alt="" />
+            <input id="Password" type="password" placeholder="Password">
+        </div>
+        <div >
+            <img src="https://img.icons8.com/ios-filled/30/000000/phone.png" />
+            <input id="Phone_No" type="number" maxlength="10" placeholder="Phone Number">
+        </div>
+        <input class="Submit" type="button" value="Submit" onclick="showValues()">
+    </form>
+    <script src="HMS.js"></script>
+</body>
+</html>

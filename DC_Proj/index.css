@@ -1,0 +1,143 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.535);
+    background-color: #1a1a1a;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 18.01vh;
+    width: 100vw;
+    z-index: 1;
+}
+.navbar .top{
+    display: flex;
+    padding: 16.5px 48px;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar .top .con{
+    margin: 0 10px;
+}
+.navbar .top #logo{
+    height: 32px;
+    width: 200px;
+    border: 1px solid #1a1a1a;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5f/Coursera_logo_%282020%29.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar .top input{
+    width: 280px;
+    height: 44px;
+    border-style: none;
+    font-size:medium;
+    outline: none;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50px;
+    padding: 6px 20px;
+}
+.navbar .top input::placeholder{
+    color: rgba(255, 255, 255, 0.535);
+}
+.navbar #nav{
+    display: flex;
+    padding: 0 48px;
+    border-radius: 40px;
+    gap: 20px;
+}
+
+.navbar #nav a {
+    padding: 10px 12px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid #1a1a1a;
+    text-decoration: none;
+    transition: all 0.5s ease-in, border 300ms ease-in-out;
+}
+
+.navbar #nav a:hover{
+    border-bottom: 2px solid white;
+    background-color: #2a2a2a;
+}
+.navbar #nav .active{
+    border-bottom: 2px solid white;
+    background-color: #2a2a2a;
+}
+.content{
+    margin-top: 150px;
+    display: flex;
+    padding: 30px 48px;
+    height: 100%;
+}
+.content .course{
+    color: white;
+    height: 100%;
+}
+
+.content .course .inc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.content .course .cont{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    background-color: #2a2a2a;
+    height: 55vh;
+    width: 250px;
+    border: 1px solid #9b9b9b;
+    border-radius: 20px;
+    margin: 18px 8px;
+    padding: 0px 15px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    transition: all 200ms ease-in-out 0s;
+    cursor: pointer;
+}
+
+.content .course .cont:hover{
+    box-shadow: 1px 25px 45px rgba(0, 0, 0, 0.846);
+    transform: scale(1.05) translateY(-2px);
+}
+
+.img {
+    margin: 11.6px 0px;
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.img img {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cont span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12%;
+}

@@ -1,0 +1,279 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Bhai', cursive;
+}
+.background{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.navbar{
+    position: fixed;
+    height: 164px;
+    display: flex;
+    z-index: 1;
+}
+.navitems::before{
+    content: "";
+    height: 164px;
+    width: 100%;
+    position: fixed;
+    background-color:#b10101;
+    z-index: -1;
+    opacity: 0.8;
+}
+.navbar .logo > img{
+    height: 164px;
+    width: 400px;
+}
+.navbar .navitems{
+    height: 164px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+.navbar .navitems a{
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid;
+    color: white;
+    margin: 20px 20px ;
+    padding: 3px 16px ;
+    transition: 300ms ease 0ms;
+}
+.navbar .navitems a.active{
+    border-radius: 20px;
+    color:#b10101; 
+    background-color:white;
+}
+.navbar .navitems a:hover{
+    border-radius: 20px;
+    color:#b10101; 
+    background-color:white ;
+}
+#tac1{
+    margin: 0px 0px;
+    margin-top: 175px;
+    color: black;
+    font-size: 40px;
+    align-content: center;
+}
+#home{
+    height: 697px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    text-align: center;
+    align-items: center;
+}
+.tac3{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+#home form {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 100px;
+    text-align: center;
+    align-items: center;
+}
+#home >form> .text{
+    outline: none;
+    background: none;
+    /* backdrop-filter: blur(5px); */
+    background-color: white;
+    width: 211px;
+    border: 2px solid black;
+    font-size: 20px;
+    text-align: center;
+    margin: 6px 10px;
+    padding: 3px 50px;
+    border-radius: 20px;
+}
+#home > form > input::placeholder {
+    color: black;
+}
+#ordernow{
+    width: 211px;
+    padding: 3px 50px;
+    border: 2px solid white;
+    color: white;
+    background: #b10101;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 300ms ease 0ms;
+}
+#ordernow:hover{
+    border: 2px solid #b10101;
+    color: #b10101;
+    background-color: white;
+    border-radius: 20px;
+}
+.background::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url(https://previews.123rf.com/images/cloudbursted/cloudbursted2004/cloudbursted200400041/146214698-food-packaging-on-yellow-background-quarantine-food-delivery-home-flatlay-banner-with-copyspace-.jpg) no-repeat center center/cover ;
+    z-index: -2;
+    opacity: 0.9;
+    top: 0px;
+}
+.tac1{
+    color: black;
+    font-size: 40px;
+    margin: 5px;
+    text-align: center;
+}
+.ServiceContainer{
+    background-color: white;
+}
+.ServiceContainer >h1{
+    text-decoration: underline;
+    color: black;
+}
+.boximage{
+    border-radius: 10px;
+    margin: 3px;
+    height: 120px;
+    width: 180px;
+}
+#services{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#services >.box >p{
+    color: black;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.client-section::before{
+    content: "";
+    height:100%;
+    width: 100%;
+    position: absolute;
+    background :url(https://www.ecseq.com/img/about-company.png) center center/cover;
+    z-index: -2;
+    opacity: 0.5;
+}
+.client-section{
+    width: 99%;
+    position: relative;
+    margin-top: 19px;
+    border: 2px solid black;
+    border-radius: 10px;
+    z-index: -2;
+}
+.client-section h1{
+    text-decoration: underline;
+    color: black;
+}
+#client-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.client-section #client-section img{
+    margin: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+#i1{
+    height: 110px;
+    width: 250px;
+}
+#i2{
+    height: 110px;
+    width: 110px;
+}
+#i3{
+    height: 110px;
+    width: 400px;
+}
+#i4{
+    border-radius: 10px;
+    height: 110px;
+    width: 190px;
+}
+#contactus {
+    position: relative;
+    margin: 19px;
+}
+#contactus::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: url(https://www.scame.com/documents/20143/232052098/header-Contact-us.jpg/9e186420-3a81-b244-47e4-6ba9afffdf80?t=1553717922505) no-repeat center center/cover ;
+    z-index: -3;
+    opacity: 0.9;
+    top: 0px;
+}
+#contactus form {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 100px;
+    align-items: center;
+}
+#contactus form div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+#contactus form img{
+    height: 30px;
+    width: 30px;
+}
+#contactus form .text{
+    outline: none;
+    background: none;
+    backdrop-filter: blur(5px);
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin: 6px 10px;
+    padding: 3px 50px;
+    z-index: 0;
+}
+#contactus input::placeholder{
+    color: black;
+}
+#send{
+    padding: 3px 50px;
+    border: 2px solid black;
+    color: black;
+    background: none;
+    backdrop-filter: blur(5px);
+    margin: 6px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 300ms ease 0ms;
+    z-index: 0;
+}
+#send:hover{
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 20px;
+}
